@@ -24,7 +24,7 @@ public class UniversityController {
 	UniversityService universityService;
 
 	@ApiOperation(value = "Get list of university")
-	@RequestMapping(path = "/", method = RequestMethod.GET)
+	@RequestMapping(path = "", method = RequestMethod.GET)
 	public OutputBean<List<UniversityBean>> getUniversities() {
 		return new OutputBean<>("data", universityService.getAll());
 	}
